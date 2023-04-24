@@ -4,4 +4,4 @@ EXPOSE 5000
 ENV DATABASE_URL=${DATABASE_URL}
 COPY . ./
 RUN npm install
-CMD [ "node", "index.js"]
+CMD [ "node", "app.js"]
