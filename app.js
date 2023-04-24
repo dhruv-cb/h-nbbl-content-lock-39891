@@ -8,8 +8,8 @@ const createToken = require("./createToken");
 const app = express();
 const port = 5000;
 require('dotenv').config();
-require("./database/config/db");
-require("./database/models/dbo");
+require("./server/config/db");
+require("./server/models/dbo");
 
 
 V3.generateKey("local", { format: "paserk" }).then((key) => {
