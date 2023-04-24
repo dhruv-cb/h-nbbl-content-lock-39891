@@ -23,7 +23,7 @@ const hederaClient = new Client({ network: "testnet" }); // Use 'mainnet' for pr
 app.use(cors());
 app.use(express.json());
 
-require('./routes/index.js')(app);
+// require('./routes/index.js')(app);
 // Endpoint to generate PASETO token
 app.post("/generate-token", async (req, res) => {
   const { accountId } = req.body;
